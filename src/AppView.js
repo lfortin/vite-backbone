@@ -1,5 +1,5 @@
 // AppView.js
-import UseCaseCollection from './UseCaseCollection.js';
+import UseCaseCollection from './collections/UseCaseCollection.js';
 
 const usecasesTemplate = `
 <div class="container mt-4">
