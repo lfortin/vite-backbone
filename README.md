@@ -16,6 +16,8 @@
 - ⚡ Vite for modern development and lightning-fast builds
 - 🌐 Globals for `$`, `_`, `Backbone`, `Handlebars`
 
+[![Screenshot](https://github.com/lfortin/vite-backbone/blob/main/public/screenshot.png?raw=true)](https://github.com/lfortin/vite-backbone/blob/main/public/screenshot.png?raw=true)
+
 ---
 
 ## 🛠️ Usage
