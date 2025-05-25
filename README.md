@@ -2,13 +2,21 @@
 
 > 📦 Starter template for Backbone.js apps using Vite, Bootstrap 5, Handlebars, jQuery, and Underscore.
 
+![Vite](https://img.shields.io/badge/Vite-^5.0-blueviolet?logo=vite)
+![Backbone](https://img.shields.io/badge/Backbone.js-^1.4-blue?logo=javascript)
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+
+---
+
 ## 🚀 Features
 
-- Backbone Views, Models, and Collections
-- Bootstrap 5 layout & styling
-- Handlebars.js for templating
-- Vite for modern, fast dev builds
-- Global `$`, `_`, `Backbone`, `Handlebars` support
+- ✅ Backbone Views, Models, Collections, and Routers
+- 🎨 Bootstrap 5 layout & styling
+- 📝 Handlebars.js for logic-less templating
+- ⚡ Vite for modern development and lightning-fast builds
+- 🌐 Globals for `$`, `_`, `Backbone`, `Handlebars`
+
+---
 
 ## 🛠️ Usage
 
@@ -18,7 +26,16 @@
 git clone https://github.com/lfortin/vite-backbone.git
 cd vite-backbone
 npm install
+```
 
-# Start dev server
+### 2. Start Development Server
+
+```bash
 npm run dev
+```
+
+### 3. Build for Production
+
+```bash
+npm run build
 ```
