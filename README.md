@@ -46,3 +46,9 @@ npm run dev
 ```bash
 npm run build
 ```
+
+---
+
+## 📄 License
+
+MIT © [lfortin](https://github.com/lfortin)
