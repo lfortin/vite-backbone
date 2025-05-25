@@ -2,9 +2,9 @@
 
 > 📦 Starter template for Backbone.js apps using Vite, Bootstrap 5, Handlebars, jQuery, and Underscore.
 
-![Vite](https://img.shields.io/badge/Vite-^5.0-blueviolet?logo=vite)
-![Backbone](https://img.shields.io/badge/Backbone.js-^1.4-blue?logo=javascript)
-![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+[![Vite](https://img.shields.io/badge/Vite-^5.0-blueviolet?logo=vite)](https://vitejs.dev/)
+[![Backbone.js](https://img.shields.io/badge/Backbone.js-^1.4-blue?logo=javascript)](https://backbonejs.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 ---
 
