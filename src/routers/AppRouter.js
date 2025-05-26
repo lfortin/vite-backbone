@@ -1,6 +1,8 @@
 // AppRouter.js
-import AppView from "./AppView.js";
-import { usecases } from "./data/usecases.js";
+import AppView from "../views/AppView.js";
+import { usecases } from "../data/usecases.js";
+
+const home = new AppView();
 
 const AppRouter = Backbone.Router.extend({
   routes: {
@@ -10,7 +12,7 @@ const AppRouter = Backbone.Router.extend({
   },
 
   home() {
-    AppView.collection.reset(usecases); // Show main use case list
+    home.collection.reset(usecases); // Show main use case list
   },
 
   about() {
@@ -33,5 +35,4 @@ const AppRouter = Backbone.Router.extend({
   },
 });
 
-const router = new AppRouter();
-export default router;
+export default AppRouter;

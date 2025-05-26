@@ -1,5 +1,5 @@
 // AppView.js
-import UseCaseCollection from "./collections/UseCaseCollection.js";
+import UseCaseCollection from "../collections/UseCaseCollection.js";
 
 const usecasesTemplate = `
 <div class="container mt-4">
@@ -43,5 +43,4 @@ const AppView = Backbone.View.extend({
   },
 });
 
-const instance = new AppView();
-export default instance;
+export default AppView;

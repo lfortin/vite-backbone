@@ -1,6 +1,7 @@
 import "./globals"; // Sets globals for jQuery, Underscore, Backbone, and Handlebars
-import router from "./AppRouter.js";
+import AppRouter from "./routers/AppRouter.js";
 
+new AppRouter(); // Initialize router
 Backbone.history.start(); // Enable routing
 
 // DOM Ready
