@@ -1,4 +1,4 @@
-// AppView.js
+// HomeView.js
 import UseCaseCollection from "../collections/UseCaseCollection.js";
 
 const usecasesTemplate = `
@@ -22,7 +22,7 @@ const usecasesTemplate = `
 </div>
 `;
 
-const AppView = Backbone.View.extend({
+const HomeView = Backbone.View.extend({
   el: "#app",
 
   initialize() {
@@ -43,4 +43,4 @@ const AppView = Backbone.View.extend({
   },
 });
 
-export default AppView;
+export default HomeView;

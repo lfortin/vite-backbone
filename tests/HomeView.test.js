@@ -1,12 +1,12 @@
-import AppView from "../src/views/AppView.js";
+import HomeView from "../src/views/HomeView.js";
 import UseCaseModel from "../src/models/UseCaseModel.js";
 
-describe("AppView", () => {
+describe("HomeView", () => {
   let view;
 
   beforeEach(() => {
     $("#app").empty(); // Clear app container
-    view = new AppView(); // Create a new instance (not singleton)
+    view = new HomeView(); // Create a new instance (not singleton)
   });
 
   it("renders with empty collection initially", () => {

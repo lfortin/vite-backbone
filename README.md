@@ -14,6 +14,7 @@
 - 🎨 Bootstrap 5 layout & styling
 - 📝 Handlebars.js for logic-less templating
 - ⚡ Vite for modern development and lightning-fast builds
+- 🧪 Unit testing with Vitest
 - 🌐 Globals for `$`, `_`, `Backbone`, `Handlebars`
 
 ---
@@ -45,6 +46,18 @@ npm run dev
 
 ```bash
 npm run build
+```
+
+---
+
+## 🧪 Running Tests
+
+This project uses [Vitest](https://vitest.dev/) for unit testing.
+
+To run all tests:
+
+```bash
+npm run test
 ```
 
 ---
