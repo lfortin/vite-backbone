@@ -8,7 +8,8 @@ export const usecases = [
   },
   {
     title: "Logic + Layout Separation",
-    description: "Handlebars keeps your HTML clean and logic-free.",
+    description: "Handlebars templating keeps your HTML clean and logic-free.",
+    link: "https://handlebarsjs.com/",
   },
   {
     title: "Quick Styling",
@@ -28,9 +29,10 @@ export const usecases = [
     link: "https://backbonejs.org/#Router",
   },
   {
-    title: "Dynamic Template Rendering",
+    title: "Unit Testing",
     description:
-      "Update views easily by re-rendering Handlebars templates with new data.",
+      "Vitest is a fast, powerful, and easy-to-use JavaScript test runner.",
+    link: "https://vitest.dev/",
   },
   {
     title: "Fast Dev with Vite",
