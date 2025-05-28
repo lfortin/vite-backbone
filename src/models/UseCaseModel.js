@@ -4,6 +4,8 @@ const UseCaseModel = Backbone.Model.extend({
     title: "",
     description: "",
     link: null,
+    hasCounter: false,
+    counter: 0,
   },
 });
 
