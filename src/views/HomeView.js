@@ -3,13 +3,13 @@ import UseCaseCollection from "../collections/UseCaseCollection.js";
 
 const usecasesTemplate = `
 <div class="container mt-4">
-  <h2 class="mb-4">vite-backbone template: Use Cases</h2>
+  <h2 class="mb-4">vite-backbone Starter Template: Use Cases</h2>
   <div class="row">
     {{#each usecases}}
       <div class="col-md-4 mb-3">
         <div class="card h-100 shadow-sm" data-model-id="{{id}}">
           <div class="card-body">
-            <h5 class="card-title">{{title}}</h5>
+            <h5 class="card-title"><i class="bi bi-check-circle"></i> {{title}}</h5>
             <p class="card-text">{{description}}</p>
             {{#if link}}
               <a href="{{link}}" class="btn btn-primary" target="_blank">Learn More</a>
