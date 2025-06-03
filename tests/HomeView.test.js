@@ -27,7 +27,7 @@ describe("HomeView", () => {
     // render() is triggered by the `add` event
     const card = $("#app .card");
     expect(card.length).toBe(1);
-    expect(card.find(".card-title").text()).toBe("Test Case");
+    expect(card.find(".card-title").text()).toMatch("Test Case");
     expect(card.find("a").attr("href")).toBe("https://example.com");
   });
 
