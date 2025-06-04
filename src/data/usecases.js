@@ -23,7 +23,7 @@ export const usecases = [
     id: "177aa50c-a466-4c56-987c-c3c794e4fb8d",
     title: "Data Binding & Events",
     description:
-      "Backbone’s models and collections support change events and syncing.",
+      "Backbone’s models and collections support change events and syncing with RESTful APIs.",
     link: "https://backbonejs.org/#Model",
   },
   {
@@ -49,8 +49,10 @@ export const usecases = [
   },
   {
     id: "dd6eaa1e-f0dc-4f9c-87cc-3f9423a901e6",
-    title: "Extend with jQuery Plugins",
-    description: "Seamlessly integrate jQuery plugins into Backbone views.",
+    title: "ESLint for Code Quality",
+    description:
+      "ESLint statically analyzes your code to find problems and enforce style.",
+    link: "https://eslint.org/",
   },
   {
     id: "b975384c-6294-4d51-a87d-b5092078ad2f",
