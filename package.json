@@ -16,6 +16,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "build:visualize": "vite build --config vite.visualizer.config.js",
     "preview": "vite preview",
     "lint": "eslint",
     "lint:fix": "eslint --fix",
@@ -29,6 +30,7 @@
     "eslint": "^9.28.0",
     "globals": "^16.2.0",
     "jsdom": "^26.1.0",
+    "rollup-plugin-visualizer": "^6.0.1",
     "vite": "^6.3.5",
     "vitest": "^3.1.4"
   },
