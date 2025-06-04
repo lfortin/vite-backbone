@@ -4,16 +4,19 @@ import { defineConfig } from "eslint/config";
 
 export default defineConfig([
   {
+    ignores: ["public/**", "dist/**", "coverage/**", "node_modules/**"],
+  },
+  {
     files: ["**/*.{js,mjs,cjs}"],
     plugins: { js },
     extends: ["js/recommended"],
     languageOptions: {
       globals: {
         ...globals.browser,
-        Backbone: "readonly",
-        jQuery: "readonly",
         $: "readonly",
+        jQuery: "readonly",
         _: "readonly",
+        Backbone: "readonly",
         Handlebars: "readonly",
       },
     },
@@ -23,10 +26,10 @@ export default defineConfig([
     languageOptions: {
       globals: {
         ...globals.vitest,
-        Backbone: "readonly",
-        jQuery: "readonly",
         $: "readonly",
+        jQuery: "readonly",
         _: "readonly",
+        Backbone: "readonly",
         Handlebars: "readonly",
       },
     },
