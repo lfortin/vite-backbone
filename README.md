@@ -17,6 +17,7 @@
 - 🧪 Unit testing with Vitest
 - 📏 ESLint pre-configured for common globals
 - 🌐 Globals for `$`, `_`, `Backbone`, `Handlebars`
+- 🔧 Easily configurable and extendable
 
 ---
 
