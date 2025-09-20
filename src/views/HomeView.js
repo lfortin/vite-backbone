@@ -55,6 +55,7 @@ const HomeView = Backbone.View.extend({
     });
 
     this.$el.html(html);
+    return this;
   },
 });
 

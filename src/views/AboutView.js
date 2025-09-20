@@ -12,6 +12,7 @@ const AboutView = Backbone.View.extend({
     `;
 
     this.$el.html(html);
+    return this;
   },
 });
 

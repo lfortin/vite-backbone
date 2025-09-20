@@ -16,7 +16,7 @@
 // TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE
 // OR OTHER DEALINGS IN THE SOFTWARE.
 
-import "./globals"; // Sets globals for jQuery, Underscore, Backbone, and Handlebars
+import "./globals.js"; // Sets globals for jQuery, Underscore, Backbone, and Handlebars
 import AppRouter from "./routers/AppRouter.js";
 
 new AppRouter(); // Initialize router
