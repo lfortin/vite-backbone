@@ -17,6 +17,11 @@
 // OR OTHER DEALINGS IN THE SOFTWARE.
 
 import "./globals.js"; // Sets globals for jQuery, Underscore, Backbone, and Handlebars
+import "bootstrap/scss/bootstrap.scss";
+/* eslint-disable no-unused-vars */
+import { Collapse } from "bootstrap"; // Here, import more Bootstrap plugins if needed
+import "bootstrap-icons/font/bootstrap-icons.scss";
+import "/src/styles/style.scss"; // Custom styles
 import AppRouter from "./routers/AppRouter.js";
 
 new AppRouter(); // Initialize router
