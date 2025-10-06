@@ -1,6 +1,8 @@
 // HelpView.js
 const HelpView = Backbone.View.extend({
-  el: "#app",
+  id: "help",
+
+  tagName: "div",
 
   render() {
     const html = `

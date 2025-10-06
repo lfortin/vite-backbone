@@ -18,20 +18,38 @@ const AppRouter = Backbone.Router.extend({
     "*path": "notFound",
   },
 
+  initialize() {
+    // insert views into the DOM
+    $("#app").empty();
+    $("#app").append(home.$el);
+    $("#app").append(about.$el);
+    $("#app").append(help.$el);
+    $("#app").append(notFound.$el);
+  },
+
+  _showView(view) {
+    if (!view?.$el) {
+      return;
+    }
+    $("#app > div").not(view.el).hide();
+    view.$el.show();
+  },
+
   home() {
     home.collection.reset(usecases); // Show main use case list
+    this._showView(home);
   },
 
   about() {
-    about.render();
+    this._showView(about.render());
   },
 
   help() {
-    help.render();
+    this._showView(help.render());
   },
 
   notFound() {
-    notFound.render();
+    this._showView(notFound.render());
   },
 });
 

@@ -8,11 +8,11 @@ const usecasesTemplate = `
     {{#each usecases}}
       <div class="col-md-4 mb-3">
         <div class="card h-100 shadow-sm" data-model-id="{{id}}">
-          <div class="card-body">
+          <div class="card-body usecase-card">
             <h5 class="card-title"><i class="bi bi-check-circle"></i> {{title}}</h5>
             <p class="card-text">{{description}}</p>
             {{#if link}}
-              <a href="{{link}}" class="btn btn-primary" target="_blank">Learn More</a>
+              <a href="{{link}}" class="btn btn-primary learn-more" target="_blank">Learn More</a>
             {{/if}}
             {{#if hasCounter}}
               <a href="#" class="btn btn-success button-counter">count is {{counter}}</a>
@@ -26,13 +26,16 @@ const usecasesTemplate = `
 `;
 
 const HomeView = Backbone.View.extend({
-  el: "#app",
+  id: "home",
+
+  tagName: "div",
 
   events: {
     "click a.button-counter": "onCounterClick",
   },
 
   onCounterClick(event) {
+    event.stopPropagation();
     event.preventDefault();
 
     const cardId = $(event.target).closest(".card").attr("data-model-id");

@@ -1,6 +1,8 @@
 // NotFoundView.js
 const NotFoundView = Backbone.View.extend({
-  el: "#app",
+  id: "not-found",
+
+  tagName: "div",
 
   render() {
     const html = `

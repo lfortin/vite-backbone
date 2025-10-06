@@ -1,6 +1,8 @@
 // AboutView.js
 const AboutView = Backbone.View.extend({
-  el: "#app",
+  id: "about",
+
+  tagName: "div",
 
   render() {
     const html = `
