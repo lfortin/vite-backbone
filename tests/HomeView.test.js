@@ -7,12 +7,13 @@ describe("HomeView", () => {
   beforeEach(() => {
     $("#app").empty(); // Clear app container
     view = new HomeView(); // Create a new instance (not singleton)
+    $("#app").append(view.$el); // Append to app container
   });
 
   it("renders with empty collection initially", () => {
     view.render();
-    expect($("#app .card").length).toBe(0);
-    expect($("#app .container").length).toBe(1);
+    expect($("#home .card").length).toBe(0);
+    expect($("#home .container").length).toBe(1);
   });
 
   it("renders one use case when added to the collection", () => {
@@ -25,7 +26,7 @@ describe("HomeView", () => {
     );
 
     // render() is triggered by the `add` event
-    const card = $("#app .card");
+    const card = $("#home .card");
     expect(card.length).toBe(1);
     expect(card.find(".card-title").text()).toMatch("Test Case");
     expect(card.find("a").attr("href")).toBe("https://example.com");
@@ -44,7 +45,7 @@ describe("HomeView", () => {
       },
     ]);
 
-    const cards = $("#app .card");
+    const cards = $("#home .card");
     expect(cards.length).toBe(2);
     expect(cards.eq(1).find("a").attr("href")).toBe("https://link.com");
   });
