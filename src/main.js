@@ -2,7 +2,7 @@
 // Starter template for Backbone.js apps using Vite, Bootstrap 5, Handlebars, jQuery, and Underscore.
 // https://github.com/lfortin/vite-backbone
 //
-// Copyright (c) 2025 Laurent Fortin
+// Copyright (c) 2025-2026 Laurent Fortin
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy of
 // this software and associated documentation files (the “Software”), to deal in the
