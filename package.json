@@ -15,9 +15,13 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "dev:cdn": "vite --config vite-cdn.config.js",
     "build": "vite build",
+    "build:cdn": "vite build --config vite-cdn.config.js",
     "build:visualize": "vite build --config vite.visualizer.config.js",
+    "build:visualize:cdn": "vite build --config vite-cdn.visualizer.config.js",
     "preview": "vite preview",
+    "preview:cdn": "vite preview --config vite-cdn.config.js",
     "lint": "eslint",
     "lint:fix": "eslint --fix",
     "test": "vitest run",
