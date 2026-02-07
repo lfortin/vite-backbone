@@ -28,6 +28,24 @@ Try it out online:
 
 ---
 
+## 📂 Project Structure
+
+```text
+├── public/             # Static assets
+├── src/
+│   ├── collections/    # Backbone Collections
+|   ├── data/           # Static data files
+│   ├── models/         # Backbone Models
+│   ├── routers/        # Backbone Routers
+│   ├── styles/
+│   │   └── style.scss  # Custom styles
+│   ├── views/          # Backbone Views
+│   ├── main.js         # App entry point & Router init
+│   └── main-cdn.js     # App entry point for CDN-specific build
+├── index.html          # Main app page
+├── index-cdn.html      # CDN-specific app page
+└── tests/              # Unit tests
+
 ## 🛠️ Usage
 
 ### 1. Clone & Install
@@ -50,7 +68,12 @@ npm run dev
 npm run build
 ```
 
----
+### Using CDN links for external dependencies
+
+```bash
+npm run dev:cdn
+npm run build:cdn
+```
 
 ## 🧪 Running Tests
 
