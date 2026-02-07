@@ -45,6 +45,7 @@ Try it out online:
 ├── index.html          # Main app page
 ├── index-cdn.html      # CDN-specific app page
 └── tests/              # Unit tests
+```
 
 ## 🛠️ Usage
 
