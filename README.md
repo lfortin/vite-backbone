@@ -28,7 +28,7 @@ Try it out online:
 
 ---
 
-## 📂 Project Structure
+## 📂 Template Structure
 
 ```text
 ├── public/             # Static assets
