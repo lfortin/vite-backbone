@@ -31,10 +31,12 @@ Try it out online:
 ## 📂 Template Structure
 
 ```text
+├── index.html          # Main app page
+├── index-cdn.html      # CDN-specific app page
 ├── public/             # Static assets
 ├── src/
 │   ├── collections/    # Backbone Collections
-|   ├── data/           # Static data files
+│   ├── data/           # Static data files
 │   ├── models/         # Backbone Models
 │   ├── routers/        # Backbone Routers
 │   ├── styles/
@@ -42,8 +44,6 @@ Try it out online:
 │   ├── views/          # Backbone Views
 │   ├── main.js         # App entry point & Router init
 │   └── main-cdn.js     # App entry point for CDN-specific build
-├── index.html          # Main app page
-├── index-cdn.html      # CDN-specific app page
 └── tests/              # Unit tests
 ```
 
