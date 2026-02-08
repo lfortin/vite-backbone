@@ -1,3 +1,4 @@
+// UseCaseCollection.test.js
 import UseCaseCollection from "../src/collections/UseCaseCollection.js";
 
 describe("UseCaseCollection", () => {
