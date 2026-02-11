@@ -1,3 +1,4 @@
+// HomeView.test.js
 import HomeView from "../src/views/HomeView.js";
 import UseCaseModel from "../src/models/UseCaseModel.js";
 

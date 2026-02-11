@@ -1,4 +1,4 @@
-// data/usecases.js
+// usecases.js
 export const usecases = [
   {
     id: "cc895078-2ab0-45e8-b346-2a4d025647c0",

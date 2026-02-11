@@ -1,3 +1,4 @@
+// UseCaseModel.test.js
 import UseCaseModel from "../src/models/UseCaseModel.js";
 
 describe("UseCaseModel", () => {

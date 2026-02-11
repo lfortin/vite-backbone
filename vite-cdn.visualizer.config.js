@@ -1,4 +1,4 @@
-// vite.visualizer.config.js
+// vite-cdn.visualizer.config.js
 import { defineConfig } from "vite";
 import { visualizer } from "rollup-plugin-visualizer";
 
