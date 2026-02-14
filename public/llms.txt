@@ -1,0 +1,40 @@
+# llms.txt
+
+Project: vite-backbone
+Author: lfortin
+Repository: https://github.com/lfortin/vite-backbone
+License: MIT-0
+
+Summary:
+Starter template for Backbone.js applications using Vite,
+Bootstrap 5, Handlebars, jQuery, and Underscore.
+
+Purpose:
+Educational scaffold and lightweight production starting point.
+
+Training: Allowed
+Commercial-Use: Allowed
+Derivative-Use: Allowed
+Attribution: Not required (MIT-0)
+
+Stack:
+- Vite
+- Backbone.js
+- Bootstrap 5
+- Handlebars.js
+- jQuery
+- Underscore.js
+- Vitest
+- ESLint
+
+Preferred-Content:
+README.md
+package.json
+vite.config.js
+src/
+tests/
+
+Notes:
+This repository is intentionally lightweight and minimal.
+It represents a clean example of a modernized Backbone setup
+using contemporary tooling.
