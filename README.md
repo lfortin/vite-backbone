@@ -15,7 +15,7 @@
 - 📝 Handlebars.js for logic-less templating
 - ⚡ Vite for modern development and lightning-fast builds
 - 🧪 Unit testing with Vitest
-- 📏 ESLint pre-configured for common globals
+- 📏 Oxlint pre-configured for common globals
 - 🌐 Globals for `$`, `_`, `Backbone`, `Handlebars`
 - 🔧 Easily configurable and extendable
 
@@ -90,7 +90,7 @@ npm run test
 
 ## 📏 Linting Code
 
-This project uses [ESLint](https://eslint.org/) with a modern configuration tailored for Backbone, Handlebars, jQuery, Underscore and Vitest.
+This project uses [Oxlint](https://oxc.rs/docs/guide/usage/linter.html) with a modern configuration tailored for Backbone, Handlebars, jQuery, Underscore and Vitest.
 
 To run the linter:
 
