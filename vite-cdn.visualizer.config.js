@@ -33,15 +33,16 @@ export default defineConfig({
     // Automatically open the CDN version during 'npm run dev:cdn'
     open: "/index-cdn.html",
   },
-  // Optional: Silence Sass deprecation warnings. See note below.
+  // Optional: Silence Sass deprecation warnings.
   css: {
     preprocessorOptions: {
       scss: {
         silenceDeprecations: [
           "import",
-          "mixed-decls",
           "color-functions",
           "global-builtin",
+          "legacy-js-api",
+          "if-function",
         ],
       },
     },
