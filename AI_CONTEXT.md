@@ -13,7 +13,7 @@ Minimal Backbone.js starter template powered by Vite.
 - jQuery + Underscore as Backbone dependencies
 - Vite for bundling and dev server
 - Vitest for unit tests
-- ESLint for code quality
+- Oxlint for code quality
 
 ## Entry Points
 
