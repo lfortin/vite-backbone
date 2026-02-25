@@ -23,7 +23,7 @@ describe("HomeView", () => {
         title: "Test Case",
         description: "This is a test description.",
         link: "https://example.com",
-      })
+      }),
     );
 
     // render() is triggered by the `add` event

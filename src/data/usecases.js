@@ -3,8 +3,7 @@ export const usecases = [
   {
     id: "cc895078-2ab0-45e8-b346-2a4d025647c0",
     title: "Component-Based Views",
-    description:
-      "Backbone lets you structure your app into small reusable views.",
+    description: "Backbone lets you structure your app into small reusable views.",
     link: "https://backbonejs.org/#View",
   },
   {
@@ -29,36 +28,31 @@ export const usecases = [
   {
     id: "fabe99de-cc77-4d37-9e97-decc3e73fa15",
     title: "Client-Side Routing",
-    description:
-      "Use Backbone.Router to manage application state and navigation.",
+    description: "Use Backbone.Router to manage application state and navigation.",
     link: "https://backbonejs.org/#Router",
   },
   {
     id: "03b7a643-52db-4daa-a5b0-f276782cfcca",
     title: "Unit Testing",
-    description:
-      "Vitest is a fast, powerful, and easy-to-use JavaScript test runner.",
+    description: "Vitest is a fast, powerful, and easy-to-use JavaScript test runner.",
     link: "https://vitest.dev/",
   },
   {
     id: "77ed2189-0949-45cd-9746-3ad82b1df137",
     title: "Fast Dev with Vite",
-    description:
-      "Vite enables blazing fast HMR and optimized production builds.",
+    description: "Vite enables blazing fast HMR and optimized production builds.",
     link: "https://vitejs.dev/",
   },
   {
     id: "dd6eaa1e-f0dc-4f9c-87cc-3f9423a901e6",
     title: "ESLint for Code Quality",
-    description:
-      "ESLint statically analyzes your code to find problems and enforce style.",
+    description: "ESLint statically analyzes your code to find problems and enforce style.",
     link: "https://eslint.org/",
   },
   {
     id: "b975384c-6294-4d51-a87d-b5092078ad2f",
     title: "Single Page App Foundation",
-    description:
-      "Backbone is ideal for small to medium SPAs with clear structure.",
+    description: "Backbone is ideal for small to medium SPAs with clear structure.",
     hasCounter: true,
   },
 ];
