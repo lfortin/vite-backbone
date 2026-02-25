@@ -7,17 +7,10 @@
   "env": {
     "builtin": true
   },
-  "ignorePatterns": [
-    "public/**",
-    "dist/**",
-    "coverage/**",
-    "node_modules/**"
-  ],
+  "ignorePatterns": ["public/**", "dist/**", "coverage/**", "node_modules/**"],
   "overrides": [
     {
-      "files": [
-        "**/*.{js,mjs,cjs}"
-      ],
+      "files": ["**/*.{js,mjs,cjs}"],
       "rules": {
         "constructor-super": "error",
         "for-direction": "error",
@@ -92,9 +85,7 @@
       }
     },
     {
-      "files": [
-        "tests/**/*.{js,mjs,cjs}"
-      ],
+      "files": ["tests/**/*.{js,mjs,cjs}"],
       "globals": {
         "_": "readonly",
         "Backbone": "readonly",
@@ -106,9 +97,7 @@
       }
     },
     {
-      "files": [
-        "tests/setup.js"
-      ],
+      "files": ["tests/setup.js"],
       "globals": {
         "global": "writable"
       },

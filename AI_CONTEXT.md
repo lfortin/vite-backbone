@@ -1,6 +1,7 @@
 # vite-backbone — AI Context
 
 ## Overview
+
 Minimal Backbone.js starter template powered by Vite.
 
 ## Architecture
