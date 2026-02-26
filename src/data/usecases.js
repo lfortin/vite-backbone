@@ -2,7 +2,7 @@
 export const usecases = [
   {
     id: "cc895078-2ab0-45e8-b346-2a4d025647c0",
-    title: "Component-Based Views",
+    title: "Minimal View Convention",
     description: "Backbone lets you structure your app into small reusable views.",
     link: "https://backbonejs.org/#View",
   },
