@@ -21,6 +21,7 @@ const AppRouter = Backbone.Router.extend({
     about: "about",
     help: "help",
     blog: "blogIndex",
+    "blog/page/:page": "blogIndex",
     "blog/:slug": "blogPost",
     "*path": "notFound",
   },
@@ -57,9 +58,9 @@ const AppRouter = Backbone.Router.extend({
     this._showView(help.render());
   },
 
-  blogIndex() {
+  blogIndex(page = 1) {
     blogIndexView.collection.reset(blogPosts);
-    blogIndexView.setPage(1);
+    blogIndexView.setPage(page);
     this._showView(blogIndexView);
   },
 
