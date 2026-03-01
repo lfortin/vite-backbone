@@ -111,6 +111,7 @@ const BlogIndexView = Backbone.View.extend({
 
     this.currentPage = newPage;
     this.render();
+    Backbone.history.navigate(`blog/page/${newPage}`, { trigger: false, replace: false });
   },
 
   template: Handlebars.compile(blogIndexTemplate),
