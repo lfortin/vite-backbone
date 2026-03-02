@@ -31,19 +31,19 @@ const blogIndexTemplate = `
         <nav aria-label="Blog pagination">
           <ul class="pagination justify-content-center mt-4">
             <li class="page-item {{#if isFirstPage}}disabled{{/if}}">
-              <a class="page-link" href="#" data-page="prev" aria-label="Previous">
+              <a class="page-link" href="#blog/page/{{prevPage}}" aria-label="Previous">
                 <span aria-hidden="true">&laquo;</span>
               </a>
             </li>
 
             {{#each pages}}
               <li class="page-item {{#if isCurrent}}active{{/if}}">
-                <a class="page-link" href="#" data-page="{{number}}">{{number}}</a>
+                <a class="page-link" href="#blog/page/{{number}}">{{number}}</a>
               </li>
             {{/each}}
 
             <li class="page-item {{#if isLastPage}}disabled{{/if}}">
-              <a class="page-link" href="#" data-page="next" aria-label="Next">
+              <a class="page-link" href="#blog/page/{{nextPage}}" aria-label="Next">
                 <span aria-hidden="true">&raquo;</span>
               </a>
             </li>
@@ -59,10 +59,6 @@ const BlogIndexView = Backbone.View.extend({
   id: "blog",
 
   tagName: "div",
-
-  events: {
-    "click .pagination .page-link": "onPageClick",
-  },
 
   initialize() {
     this.collection = new BlogPostCollection();
@@ -83,35 +79,6 @@ const BlogIndexView = Backbone.View.extend({
 
     const totalPosts = this.collection.length;
     return totalPosts > 0 ? Math.ceil(totalPosts / PAGE_SIZE) : 1;
-  },
-
-  onPageClick(event) {
-    event.preventDefault();
-
-    const target = $(event.currentTarget);
-    const pageAttr = target.data("page");
-
-    const totalPages = this._getTotalPages();
-    let newPage = this.currentPage;
-
-    if (pageAttr === "prev") {
-      newPage = this.currentPage - 1;
-    } else if (pageAttr === "next") {
-      newPage = this.currentPage + 1;
-    } else {
-      const parsed = parseInt(pageAttr, 10);
-      if (!Number.isNaN(parsed)) {
-        newPage = parsed;
-      }
-    }
-
-    if (newPage < 1 || newPage > totalPages) {
-      return;
-    }
-
-    this.currentPage = newPage;
-    this.render();
-    Backbone.history.navigate(`blog/page/${newPage}`, { trigger: false, replace: false });
   },
 
   template: Handlebars.compile(blogIndexTemplate),
@@ -140,6 +107,8 @@ const BlogIndexView = Backbone.View.extend({
       pages,
       isFirstPage: currentPage === 1,
       isLastPage: currentPage === totalPages,
+      prevPage: currentPage - 1,
+      nextPage: currentPage + 1,
     });
 
     this.$el.html(html);
