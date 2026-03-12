@@ -2,7 +2,7 @@
 
 > 📦 Starter template for Backbone.js apps using Vite, Bootstrap 5, Handlebars, jQuery, and Underscore.
 
-[![Vite](https://img.shields.io/badge/Vite-^7.0-blueviolet?logo=vite)](https://vitejs.dev/)
+[![Vite](https://img.shields.io/badge/Vite-^8.0-blueviolet?logo=vite)](https://vitejs.dev/)
 [![Backbone.js](https://img.shields.io/badge/Backbone.js-^1.6-blue?logo=javascript)](https://backbonejs.org/)
 [![License: MIT-0](https://img.shields.io/badge/License-MIT--0-yellow.svg)](LICENSE)
 
@@ -15,7 +15,7 @@
 - 📝 Handlebars.js for logic-less templating
 - ⚡ Vite for modern development and lightning-fast builds
 - 🧪 Unit testing with Vitest
-- 📏 ESLint pre-configured for common globals
+- 📏 Oxlint pre-configured for common globals
 - 🌐 Globals for `$`, `_`, `Backbone`, `Handlebars`
 - 🔧 Easily configurable and extendable
 
@@ -90,7 +90,7 @@ npm run test
 
 ## 📏 Linting Code
 
-This project uses [ESLint](https://eslint.org/) with a modern configuration tailored for Backbone, Handlebars, jQuery, Underscore and Vitest.
+This project uses [Oxlint](https://oxc.rs/docs/guide/usage/linter.html) with a modern configuration tailored for Backbone, Handlebars, jQuery, Underscore and Vitest.
 
 To run the linter:
 
