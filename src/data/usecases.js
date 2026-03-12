@@ -45,9 +45,9 @@ export const usecases = [
   },
   {
     id: "dd6eaa1e-f0dc-4f9c-87cc-3f9423a901e6",
-    title: "ESLint for Code Quality",
-    description: "ESLint statically analyzes your code to find problems and enforce style.",
-    link: "https://eslint.org/",
+    title: "Oxlint for Code Quality",
+    description: "Oxlint statically analyzes your code to find problems and enforce style.",
+    link: "https://oxc.rs/docs/guide/usage/linter.html",
   },
   {
     id: "b975384c-6294-4d51-a87d-b5092078ad2f",
