@@ -1,5 +1,7 @@
 // AboutView.js
-const html = `
+import { html } from "../util/tags.js";
+
+const content = html`
   <div class="container mt-4">
     <h2>About</h2>
     <p>This is a Vite + Backbone starter template using Bootstrap, Handlebars, and more.</p>
@@ -13,7 +15,7 @@ const AboutView = Backbone.View.extend({
   tagName: "div",
 
   render() {
-    this.$el.html(html);
+    this.$el.html(content);
     return this;
   },
 });

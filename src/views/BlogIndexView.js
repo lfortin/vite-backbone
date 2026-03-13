@@ -1,33 +1,28 @@
 // BlogIndexView.js
 import BlogPostCollection from "../collections/BlogPostCollection.js";
+import { html } from "../util/tags.js";
 
 const PAGE_SIZE = 5;
 
-const blogIndexTemplate = `
-<div class="container mt-4 blog-list">
-  <div class="row">
-    <div class="col-lg-8">
-      <h2 class="mb-4">Blog</h2>
+const blogIndexTemplate = html`
+  <div class="container mt-4 blog-list">
+    <div class="row">
+      <div class="col-lg-8">
+        <h2 class="mb-4">Blog</h2>
 
-      {{#if posts.length}}
-        {{#each posts}}
-          <article class="card mb-3 shadow-sm">
-            <div class="card-body">
-              <h5 class="card-title mb-1">
-                <a href="#blog/{{slug}}" class="blog-post-link text-decoration-none">
-                  {{title}}
-                </a>
-              </h5>
-              <p class="text-muted small mb-2">{{date}}</p>
-              <p class="card-text mb-0">{{excerpt}}</p>
-            </div>
-          </article>
-        {{/each}}
-      {{else}}
+        {{#if posts.length}} {{#each posts}}
+        <article class="card mb-3 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title mb-1">
+              <a href="#blog/{{slug}}" class="blog-post-link text-decoration-none"> {{title}} </a>
+            </h5>
+            <p class="text-muted small mb-2">{{date}}</p>
+            <p class="card-text mb-0">{{excerpt}}</p>
+          </div>
+        </article>
+        {{/each}} {{else}}
         <p>No blog posts available yet.</p>
-      {{/if}}
-
-      {{#if hasPagination}}
+        {{/if}} {{#if hasPagination}}
         <nav aria-label="Blog pagination">
           <ul class="pagination justify-content-center mt-4">
             <li class="page-item {{#if isFirstPage}}disabled{{/if}}">
@@ -37,9 +32,9 @@ const blogIndexTemplate = `
             </li>
 
             {{#each pages}}
-              <li class="page-item {{#if isCurrent}}active{{/if}}">
-                <a class="page-link" href="#blog/page/{{number}}">{{number}}</a>
-              </li>
+            <li class="page-item {{#if isCurrent}}active{{/if}}">
+              <a class="page-link" href="#blog/page/{{number}}">{{number}}</a>
+            </li>
             {{/each}}
 
             <li class="page-item {{#if isLastPage}}disabled{{/if}}">
@@ -49,10 +44,10 @@ const blogIndexTemplate = `
             </li>
           </ul>
         </nav>
-      {{/if}}
+        {{/if}}
+      </div>
     </div>
   </div>
-</div>
 `;
 
 const BlogIndexView = Backbone.View.extend({

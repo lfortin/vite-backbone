@@ -1,45 +1,40 @@
 // BlogPostView.js
 import BlogPostCollection from "../collections/BlogPostCollection.js";
+import { html } from "../util/tags.js";
 
-const blogPostTemplate = `
-<div class="container mt-4 blog-post">
-  <div class="row">
-    <div class="col-lg-8">
-      {{#if post}}
+const blogPostTemplate = html`
+  <div class="container mt-4 blog-post">
+    <div class="row">
+      <div class="col-lg-8">
+        {{#if post}}
         <article>
           <h1 class="mb-1">{{post.title}}</h1>
           <p class="text-muted small mb-3">{{post.date}}</p>
 
-          <div class="blog-content">
-            {{{post.content}}}
-          </div>
+          <div class="blog-content">{{{post.content}}}</div>
 
           {{#if post.tags.length}}
-            <p class="mt-3">
-              <strong>Tags:</strong>
-              {{#each post.tags}}
-                <span class="badge bg-secondary me-1">{{this}}</span>
-              {{/each}}
-            </p>
+          <p class="mt-3">
+            <strong>Tags:</strong>
+            {{#each post.tags}}
+            <span class="badge bg-secondary me-1">{{this}}</span>
+            {{/each}}
+          </p>
           {{/if}}
 
           <p class="mt-4">
-            <a href="#blog" class="btn btn-outline-primary">
-              &laquo; Back to blog
-            </a>
+            <a href="#blog" class="btn btn-outline-primary"> &laquo; Back to blog </a>
           </p>
         </article>
-      {{else}}
+        {{else}}
         <p>That blog post could not be found.</p>
         <p>
-          <a href="#blog" class="btn btn-outline-primary">
-            &laquo; Back to blog
-          </a>
+          <a href="#blog" class="btn btn-outline-primary"> &laquo; Back to blog </a>
         </p>
-      {{/if}}
+        {{/if}}
+      </div>
     </div>
   </div>
-</div>
 `;
 
 const BlogPostView = Backbone.View.extend({

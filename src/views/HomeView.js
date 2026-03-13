@@ -1,28 +1,28 @@
 // HomeView.js
 import UseCaseCollection from "../collections/UseCaseCollection.js";
+import { html } from "../util/tags.js";
 
-const usecasesTemplate = `
-<div class="container mt-4">
-  <h2 class="mb-4">vite-backbone Starter Template: Use Cases</h2>
-  <div class="row">
-    {{#each usecases}}
+const usecasesTemplate = html`
+  <div class="container mt-4">
+    <h2 class="mb-4">vite-backbone Starter Template: Use Cases</h2>
+    <div class="row">
+      {{#each usecases}}
       <div class="col-md-4 mb-3">
         <div class="card h-100 shadow-sm" data-model-id="{{id}}">
           <div class="card-body usecase-card">
             <h5 class="card-title"><i class="bi bi-check-circle"></i> {{title}}</h5>
             <p class="card-text">{{description}}</p>
             {{#if link}}
-              <a href="{{link}}" class="btn btn-primary learn-more" target="_blank">Learn More</a>
-            {{/if}}
-            {{#if hasCounter}}
-              <a href="#" class="btn btn-success button-counter">count is {{counter}}</a>
+            <a href="{{link}}" class="btn btn-primary learn-more" target="_blank">Learn More</a>
+            {{/if}} {{#if hasCounter}}
+            <a href="#" class="btn btn-success button-counter">count is {{counter}}</a>
             {{/if}}
           </div>
         </div>
       </div>
-    {{/each}}
+      {{/each}}
+    </div>
   </div>
-</div>
 `;
 
 const HomeView = Backbone.View.extend({
