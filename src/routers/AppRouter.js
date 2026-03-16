@@ -65,14 +65,14 @@ const AppRouter = Backbone.Router.extend({
   },
 
   blogPost(slug) {
-    blogPostView.collection.reset(blogPosts);
-    const found = blogPostView.showBySlug(slug);
+    const found = _.findWhere(blogPosts, { slug });
 
     if (!found) {
       this.notFound();
       return;
     }
 
+    blogPostView.model.set(found);
     this._showView(blogPostView);
   },
 

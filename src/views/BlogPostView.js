@@ -1,5 +1,5 @@
 // BlogPostView.js
-import BlogPostCollection from "../collections/BlogPostCollection.js";
+import BlogPostModel from "../models/BlogPostModel.js";
 import { html } from "../util/tags.js";
 
 const blogPostTemplate = html`
@@ -43,31 +43,15 @@ const BlogPostView = Backbone.View.extend({
   tagName: "div",
 
   initialize() {
-    this.collection = new BlogPostCollection();
-    this.currentPost = null;
-  },
-
-  showBySlug(slug) {
-    if (!this.collection) return false;
-
-    const model = this.collection.get(slug);
-
-    if (!model) {
-      this.currentPost = null;
-      this.render();
-      return false;
-    }
-
-    this.currentPost = model;
-    this.render();
-    return true;
+    this.model = new BlogPostModel();
+    this.listenTo(this.model, "change", this.render);
   },
 
   template: Handlebars.compile(blogPostTemplate),
 
   render() {
     const html = this.template({
-      post: this.currentPost ? this.currentPost.toJSON() : null,
+      post: this.model ? this.model.toJSON() : null,
     });
 
     this.$el.html(html);

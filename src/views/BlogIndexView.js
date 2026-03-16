@@ -58,7 +58,7 @@ const BlogIndexView = Backbone.View.extend({
   initialize() {
     this.collection = new BlogPostCollection();
     this.currentPage = 1;
-    this.listenTo(this.collection, "update reset", this.render);
+    this.listenTo(this.collection, "update reset change", this.render);
   },
 
   setPage(page) {
