@@ -18,10 +18,9 @@
 
 import "bootstrap/scss/bootstrap.scss";
 import "bootstrap-icons/font/bootstrap-icons.scss";
-import "/src/styles/style.scss"; // Custom styles
+import "./styles/style.scss"; // Custom styles
 
-/* eslint-disable no-unused-vars */
-import { Collapse } from "bootstrap"; // Here, import more Bootstrap plugins if needed
+import "bootstrap/js/dist/collapse"; // Here, import more Bootstrap plugins if needed
 import "./globals.js"; // Sets globals for jQuery, Underscore, Backbone, and Handlebars
 import AppRouter from "./routers/AppRouter.js";
 
