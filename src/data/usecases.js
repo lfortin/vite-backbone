@@ -10,13 +10,13 @@ export const usecases = [
     id: "eae3cb6c-d6fb-4007-8afd-7d2e32c5b759",
     title: "Logic + Layout Separation",
     description: "Handlebars templating keeps your HTML clean and logic-free.",
-    link: "https://handlebarsjs.com/",
+    link: "https://handlebarsjs.com/guide/",
   },
   {
     id: "5916615a-0fca-4854-bfc4-c1ffdbea9337",
     title: "Quick Styling",
     description: "Bootstrap helps rapidly layout components with minimal CSS.",
-    link: "https://getbootstrap.com/docs/5.3/components/card/",
+    link: "https://getbootstrap.com/docs/5.3/getting-started/introduction/",
   },
   {
     id: "177aa50c-a466-4c56-987c-c3c794e4fb8d",
@@ -35,13 +35,13 @@ export const usecases = [
     id: "03b7a643-52db-4daa-a5b0-f276782cfcca",
     title: "Unit Testing",
     description: "Vitest is a fast, powerful, and easy-to-use JavaScript test runner.",
-    link: "https://vitest.dev/",
+    link: "https://vitest.dev/guide/",
   },
   {
     id: "77ed2189-0949-45cd-9746-3ad82b1df137",
     title: "Fast Dev with Vite",
     description: "Vite enables blazing fast HMR and optimized production builds.",
-    link: "https://vitejs.dev/",
+    link: "https://vite.dev/guide/",
   },
   {
     id: "dd6eaa1e-f0dc-4f9c-87cc-3f9423a901e6",
