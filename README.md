@@ -57,6 +57,9 @@ Try it out online:
 git clone https://github.com/lfortin/vite-backbone.git
 cd vite-backbone
 npm install
+
+# or by using Vite+
+vp create github:lfortin/vite-backbone
 ```
 
 ### 2. Start Development Server
