@@ -138,4 +138,184 @@ export const blogPosts = [
     `,
     tags: ["testing", "vitest"],
   },
+  {
+    slug: "2026-01-10-demo-pagination-15th-post",
+    date: "2026-01-10",
+    title: "Demo Pagination - 15th Post",
+    excerpt: "Extra post to demo pagination - 15th post",
+    content: `
+      <p>
+        This is an extra post to demonstrate pagination.
+      </p>
+    `,
+    tags: ["pagination"],
+  },
+  {
+    slug: "2026-01-10-demo-pagination-14th-post",
+    date: "2026-01-10",
+    title: "Demo Pagination - 14th Post",
+    excerpt: "Extra post to demo pagination - 14th post",
+    content: `
+      <p>
+        This is an extra post to demonstrate pagination.
+      </p>
+    `,
+    tags: ["pagination"],
+  },
+  {
+    slug: "2026-01-10-demo-pagination-13th-post",
+    date: "2026-01-10",
+    title: "Demo Pagination - 13th Post",
+    excerpt: "Extra post to demo pagination - 13th post",
+    content: `
+      <p>
+        This is an extra post to demonstrate pagination.
+      </p>
+    `,
+    tags: ["pagination"],
+  },
+  {
+    slug: "2026-01-10-demo-pagination-12th-post",
+    date: "2026-01-10",
+    title: "Demo Pagination - 12th Post",
+    excerpt: "Extra post to demo pagination - 12th post",
+    content: `
+      <p>
+        This is an extra post to demonstrate pagination.
+      </p>
+    `,
+    tags: ["pagination"],
+  },
+  {
+    slug: "2026-01-10-demo-pagination-11th-post",
+    date: "2026-01-10",
+    title: "Demo Pagination - 11th Post",
+    excerpt: "Extra post to demo pagination - 11th post",
+    content: `
+      <p>
+        This is an extra post to demonstrate pagination.
+      </p>
+    `,
+    tags: ["pagination"],
+  },
+  {
+    slug: "2026-01-10-demo-pagination-10th-post",
+    date: "2026-01-10",
+    title: "Demo Pagination - 10th Post",
+    excerpt: "Extra post to demo pagination - 10th post",
+    content: `
+      <p>
+        This is an extra post to demonstrate pagination.
+      </p>
+    `,
+    tags: ["pagination"],
+  },
+  {
+    slug: "2026-01-10-demo-pagination-9th-post",
+    date: "2026-01-10",
+    title: "Demo Pagination - 9th Post",
+    excerpt: "Extra post to demo pagination - 9th post",
+    content: `
+      <p>
+        This is an extra post to demonstrate pagination.
+      </p>
+    `,
+    tags: ["pagination"],
+  },
+  {
+    slug: "2026-01-10-demo-pagination-8th-post",
+    date: "2026-01-10",
+    title: "Demo Pagination - 8th Post",
+    excerpt: "Extra post to demo pagination - 8th post",
+    content: `
+      <p>
+        This is an extra post to demonstrate pagination.
+      </p>
+    `,
+    tags: ["pagination"],
+  },
+  {
+    slug: "2026-01-10-demo-pagination-7th-post",
+    date: "2026-01-10",
+    title: "Demo Pagination - 7th Post",
+    excerpt: "Extra post to demo pagination - 7th post",
+    content: `
+      <p>
+        This is an extra post to demonstrate pagination.
+      </p>
+    `,
+    tags: ["pagination"],
+  },
+  {
+    slug: "2026-01-10-demo-pagination-6th-post",
+    date: "2026-01-10",
+    title: "Demo Pagination - 6th Post",
+    excerpt: "Extra post to demo pagination - 6th post",
+    content: `
+      <p>
+        This is an extra post to demonstrate pagination.
+      </p>
+    `,
+    tags: ["pagination"],
+  },
+  {
+    slug: "2026-01-10-demo-pagination-5th-post",
+    date: "2026-01-10",
+    title: "Demo Pagination - 5th Post",
+    excerpt: "Extra post to demo pagination - 5th post",
+    content: `
+      <p>
+        This is an extra post to demonstrate pagination.
+      </p>
+    `,
+    tags: ["pagination"],
+  },
+  {
+    slug: "2026-01-10-demo-pagination-4th-post",
+    date: "2026-01-10",
+    title: "Demo Pagination - 4th Post",
+    excerpt: "Extra post to demo pagination - 4th post",
+    content: `
+      <p>
+        This is an extra post to demonstrate pagination.
+      </p>
+    `,
+    tags: ["pagination"],
+  },
+  {
+    slug: "2026-01-10-demo-pagination-3rd-post",
+    date: "2026-01-10",
+    title: "Demo Pagination - 3rd Post",
+    excerpt: "Extra post to demo pagination - 3rd post",
+    content: `
+      <p>
+        This is an extra post to demonstrate pagination.
+      </p>
+    `,
+    tags: ["pagination"],
+  },
+  {
+    slug: "2026-01-10-demo-pagination-2nd-post",
+    date: "2026-01-10",
+    title: "Demo Pagination - 2nd Post",
+    excerpt: "Extra post to demo pagination - 2nd post",
+    content: `
+      <p>
+        This is an extra post to demonstrate pagination.
+      </p>
+    `,
+    tags: ["pagination"],
+  },
+  {
+    slug: "2026-01-10-demo-pagination-1st-post",
+    date: "2026-01-10",
+    title: "Demo Pagination - 1st Post",
+    excerpt: "Extra post to demo pagination - 1st post",
+    content: `
+      <p>
+        This is an extra post to demonstrate pagination.
+      </p>
+    `,
+    tags: ["pagination"],
+  },
 ];
