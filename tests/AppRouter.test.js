@@ -63,13 +63,20 @@ describe("AppRouter", () => {
   });
 
   it("blogIndex(page) clamps page number within valid range", () => {
+    const pageSize = 5;
+    const totalPages = Math.max(Math.ceil(blogPosts.length / pageSize), 1);
+    const remainder = blogPosts.length % pageSize;
+    const expectedOnLastPage = remainder === 0 ? pageSize : remainder;
+
     router.blogIndex(2);
 
-    const pageSize = 5;
-    const expectedOnSecondPage = Math.max(blogPosts.length - pageSize, 0);
-    const cards = $("#blog article.card");
+    const secondPageCount = Math.min(pageSize, Math.max(blogPosts.length - pageSize, 0));
+    expect($("#blog article.card").length).toBe(secondPageCount);
 
-    expect(cards.length).toBe(expectedOnSecondPage);
+    router.blogIndex(999);
+
+    expect($("#blog article.card").length).toBe(expectedOnLastPage);
+    expect($("#blog .page-item.active .page-link").text()).toBe(String(totalPages));
   });
 
   it("blogPost(slug) shows a blog post when it exists", () => {
