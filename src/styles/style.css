@@ -1,0 +1,135 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  width: 100%;
+}
+
+.logo-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.logo-group .plus {
+  font-size: 2rem;
+  color: #888;
+}
+
+.logo-group .logo {
+  height: 6em;
+  padding: 0.5em;
+  will-change: filter;
+  transition:
+    filter 300ms,
+    transform 300ms;
+}
+
+.logo-group .logo:hover {
+  transform: scale(1.05);
+}
+
+.logo-group .vite-logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo-group .backbone-logo:hover {
+  filter: drop-shadow(0 0 2em #0071b5aa);
+}
+
+@media (prefers-color-scheme: dark) {
+  .logo-group .backbone-logo {
+    filter: drop-shadow(0 0 0.4em rgba(255, 255, 255, 0.22));
+  }
+
+  .logo-group .backbone-logo:hover {
+    filter: drop-shadow(0 0 2em #0071b5aa);
+  }
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+}
+
+.card {
+  padding: 2em;
+  border-radius: 8px;
+  background-color: #1a1a1a;
+  max-width: 400px;
+  margin: 0 auto 2rem auto;
+}
+
+.card button {
+  border-radius: 8px;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  border: 1px solid #333;
+  color: inherit;
+}
+
+.card button:hover {
+  border-color: #646cff;
+}
+
+.card button:focus,
+.card button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+p.read-the-docs {
+  color: #888;
+}
+
+code {
+  background-color: #2e2e2e;
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  font-family: monospace;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+
+  .card {
+    background-color: #f9f9f9;
+  }
+
+  .card button {
+    background-color: #f9f9f9;
+    border-color: #ddd;
+  }
+
+  code {
+    background-color: #eee;
+  }
+}
