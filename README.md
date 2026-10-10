@@ -83,12 +83,14 @@ npm run build:cdn
 
 ### Minimal template (Backbone.js + jQuery + Underscore)
 
-A clean, demo-free starting point if you only need the core stack without extra UI frameworks or templating libraries (uses `index-basic.html` and `src/main-basic.js`).
+A clean, demo-free starting point if you only need the core stack without extra UI frameworks or templating libraries (uses `index-basic.html`, `src/main-basic.js` and `styles/style-basic.css`).
 
 ```bash
 npm run dev:basic
 npm run build:basic
 ```
+
+[![basic template screenshot](https://github.com/lfortin/vite-backbone/blob/main/public/screenshot-basic.png?raw=true)](https://github.com/lfortin/vite-backbone/blob/main/public/screenshot-basic.png?raw=true)
 
 ## 🧪 Running Tests
 
