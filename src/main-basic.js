@@ -1,5 +1,5 @@
 // vite-backbone
-// Starter template for Backbone.js apps using Vite, Bootstrap 5, Handlebars, jQuery, and Underscore.
+// Starter template for Backbone.js apps using Vite, jQuery, and Underscore.
 // https://github.com/lfortin/vite-backbone
 //
 // Copyright (c) 2025-2026 Laurent Fortin
@@ -19,15 +19,10 @@
 import $ from "jquery";
 import _ from "underscore";
 import Backbone from "backbone";
-import "./styles/style.css";
+import "./styles/style-basic.css";
 
 // Inline SVG Assets
-const viteLogo = `
-  <svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 256 257" class="logo vite-logo">
-    <path fill="#41D1FF" d="M255.808 37.863L134.587 252.676c-2.473 4.38-8.7 4.38-11.174 0L2.192 37.863c-2.9-5.132 1.341-11.458 7.151-10.743l119.827 14.72a6.452 6.452 0 0 0 1.58 0l117.907-14.72c5.81-.715 10.051 5.611 7.151 10.743"/>
-    <path fill="#BD34FE" d="M189.23 7.842l-64.838 114.93c-2.022 3.585-7.228 3.585-9.25 0L49.882 7.842C47.387 3.419 51.107-1.8 56.035-1.127l63.504 8.7a6.46 6.46 0 0 0 1.764 0l61.992-8.7c4.928-.673 8.648 4.546 6.153 8.969"/>
-  </svg>
-`;
+const viteLogo = `<img src="/vite.svg" class="logo vite-logo" alt="Vite logo" />`;
 
 const backboneLogo = `
   <svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 722 897" class="logo backbone-logo" role="img" aria-label="Backbone.js">
