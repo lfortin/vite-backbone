@@ -11,7 +11,7 @@ export default defineConfig({
     },
   },
   server: {
-    // Automatically open the CDN version during 'npm run dev:cdn'
+    // Automatically open the basic version during 'npm run dev:basic'
     open: "/index-basic.html",
   },
 });
