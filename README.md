@@ -81,6 +81,15 @@ npm run dev:cdn
 npm run build:cdn
 ```
 
+### Minimal template (Backbone.js + jQuery + Underscore)
+
+A clean, demo-free starting point if you only need the core stack without extra UI frameworks or templating libraries (uses `index-basic.html` and `src/main-basic.js`).
+
+```bash
+npm run dev:basic
+npm run build:basic
+```
+
 ## 🧪 Running Tests
 
 This project uses [Vitest](https://vitest.dev/) for unit testing.
