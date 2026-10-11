@@ -4,7 +4,7 @@ import { visualizer } from "rollup-plugin-visualizer";
 
 export default defineConfig({
   build: {
-    rollupOptions: {
+    rolldownOptions: {
       // Define the custom entry point here
       input: {
         main: "index-cdn.html",

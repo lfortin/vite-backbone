@@ -4,7 +4,7 @@ import { visualizer } from "rollup-plugin-visualizer";
 
 export default defineConfig({
   build: {
-    rollupOptions: {
+    rolldownOptions: {
       plugins: [
         visualizer({
           open: true, // Set to false if you don't want it to auto-open
