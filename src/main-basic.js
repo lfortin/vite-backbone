@@ -34,58 +34,53 @@ const backboneLogo = `
   </svg>
 `;
 
-class AppView extends Backbone.View {
-  count = 0;
+const AppView = Backbone.View.extend({
+  el: "#app",
 
-  constructor(options) {
-    super({
-      el: "#app",
-      ...options,
-    });
-  }
+  count: 0,
 
   events() {
     return {
       "click #counter-btn": "incrementCounter",
     };
-  }
+  },
 
   incrementCounter(event) {
     event.preventDefault();
     this.count += 1;
     this.$("#counter-btn").text(`count is ${this.count}`);
-  }
+  },
+
+  template: _.template(`
+    <div class="starter-card">
+      <div class="logo-group">
+        <a href="https://vite.dev" target="_blank" rel="noopener noreferrer">
+          <%= viteLogo %>
+        </a>
+        <span class="plus">+</span>
+        <a href="https://backbonejs.org" target="_blank" rel="noopener noreferrer">
+          <%= backboneLogo %>
+        </a>
+      </div>
+
+      <h1>Vite + Backbone</h1>
+
+      <div class="card">
+        <button id="counter-btn" type="button">
+          count is <%= count %>
+        </button>
+        <p>Edit <code>src/main-basic.js</code> and save to test HMR</p>
+      </div>
+
+      <p class="read-the-docs">
+        Click on the Vite and Backbone logos to learn more
+      </p>
+    </div>
+  `),
 
   render() {
-    const template = _.template(`
-      <div class="starter-card">
-        <div class="logo-group">
-          <a href="https://vite.dev" target="_blank" rel="noopener noreferrer">
-            <%= viteLogo %>
-          </a>
-          <span class="plus">+</span>
-          <a href="https://backbonejs.org" target="_blank" rel="noopener noreferrer">
-            <%= backboneLogo %>
-          </a>
-        </div>
-
-        <h1>Vite + Backbone</h1>
-
-        <div class="card">
-          <button id="counter-btn" type="button">
-            count is <%= count %>
-          </button>
-          <p>Edit <code>src/main-basic.js</code> and save to test HMR</p>
-        </div>
-
-        <p class="read-the-docs">
-          Click on the Vite and Backbone logos to learn more
-        </p>
-      </div>
-    `);
-
     this.$el.html(
-      template({
+      this.template({
         viteLogo,
         backboneLogo,
         count: this.count,
@@ -93,8 +88,8 @@ class AppView extends Backbone.View {
     );
 
     return this;
-  }
-}
+  },
+});
 
 $(() => {
   const app = new AppView();
