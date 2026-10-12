@@ -5,6 +5,12 @@ const content = html`
   <div class="container mt-4">
     <h2>About</h2>
     <p>This is a Vite + Backbone starter template using Bootstrap, Handlebars, and more.</p>
+    <p>
+      Explore the source code and documentation on
+      <a href="https://github.com/lfortin/vite-backbone" target="_blank" rel="noopener noreferrer"
+        >GitHub</a
+      >.
+    </p>
     <p>Released under the MIT-0 License.</p>
   </div>
 `;
